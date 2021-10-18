@@ -1,0 +1,262 @@
+/* ========================GLOBAL STYLE CSS START HERE====================== */
+/* .........Typhography.......... */
+@font-face {
+    font-family:"PTSans-Regular";
+    src: url(../fonts/PTSans/PTSans-Regular.ttf);
+}
+@font-face {
+    font-family:"PTSans-Bold";
+    src: url(../fonts/PTSans/PTSans-Bold.ttf);
+}
+@font-face {
+    font-family:"Rubik-Light";
+    src: url(../fonts/Rubik/Rubik-Light.ttf);
+}
+@font-face {
+    font-family:"Rubik-Regular";
+    src: url(../fonts/Rubik/Rubik-Regular.ttf);
+}
+@font-face {
+    font-family:"Rubik-Medium";
+    src: url(../fonts/Rubik/Rubik-Medium.ttf);
+}
+body{
+    background:#edf2f4;
+}
+body,h1,h2,h3,h4,h5,h6,a{
+    font-family:"PTSans-Regular";
+    font-size: 2rem;
+    color:#000814;
+}
+a,
+a:hover,
+a:focus,
+a:active{
+    font-size: 1rem;
+    text-decoration: none;
+    outline: none;
+}
+body,p,span{
+    font-family:"Rubik-Regular";
+    color:#11151c;
+    font-size: 16px;
+}
+img{
+    width: 100%;
+}
+ul{
+    padding-left: 0;
+}
+ul,li{
+    list-style: none;
+}
+
+/*input and button type focus all disable*/
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=url]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+textarea:focus,
+input[type=button]:focus,
+input[type=reset]:focus,
+input[type=submit]:focus,
+select:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ddd;
+}
+
+/* ======================GLOBAL STYLE CSS END HERE============================= */
+/*....................MAIN SIDEBAR MENU CSS START HERE........................*/
+.side-menu-wrapper .menu-toogle-icon {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    margin-right: 0px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    background: #7280ff;
+    z-index: 8;
+    display:none;
+    box-shadow: 0px 5px 20px 0px rgba(71, 69, 97, 0.7);
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 {
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 span {
+    display: block;
+    height: 2px;
+    width: 45%;
+    left: 13px;
+    position: absolute;
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 span:nth-child(1) {
+    top: 17px;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 span:nth-child(2),
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 span:nth-child(3) {
+    top: 22px;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3 span:nth-child(4) {
+    top: 27px;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3.open span:nth-child(1) {
+    top: 27px;
+    width: 0%;
+    left: 50%;
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3.open span:nth-child(2) {
+    transform: rotate(45deg);
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3.open span:nth-child(3) {
+    transform: rotate(-45deg);
+  }
+  .side-menu-wrapper .menu-toogle-icon #nav-icon3.open span:nth-child(4) {
+    top: 27px;
+    width: 0%;
+    left: 50%;
+  }
+
+  /*.....................SIDEBAR MENU CSS START....................... */ 
+  .sidebar-menu{
+    width: 250px;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 99;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    background: #edf2f4 !important;
+    box-shadow: 0px 0px 5px 4px rgba(175, 175, 175, 0.4);
+  }
+  .sidebar-menu .heading-area {
+    text-align: center;
+    padding-top: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 22px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sidebar-menu .heading-area::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 359%;
+    transform: rotate(50deg);
+    top: -135%;
+    left: -80%;
+    background: #caf0f8;
+    z-index: -1;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .sidebar-menu .heading-area img {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #caf0f8;
+    box-shadow: 0px 0px 5px 1px rgba(1, 6, 24, 0.2);
+  }
+  .sidebar-menu .heading-area .name {
+    font-family:"PTSans-Bold";
+    font-size: 20px;
+    color: #000814 !important;
+    margin-top: 13px;
+    text-shadow: 1px 0px 0px #ff6388;
+    letter-spacing: 1px;
+    animation:logoanimate 10s ease-in-out infinite;
+  }
+
+  @keyframes logoanimate{
+      0%{
+          transform:scale(.6);
+      }
+      50%{
+          transform:scale(1.30);
+      }
+      100%{
+          transform: scale(.6);
+      }
+    
+  }
+  .primary_menu li{
+      margin:20px 30px;
+  }
+  .primary_menu li a {
+    font-family:"PTSans-Bold";
+    color: #000814 !important;
+    font-size: 16px;
+    border-radius: 3px;
+    position: relative;
+    display:inline-block;
+    transition: all 0.3s ease-in;
+  }
+  .primary_menu li a::after{
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -1px;
+      width: 100%;
+      height: 2px;
+      background:#ff0a54;
+      transform: scaleX(0);
+      transform-origin:right;
+      transition: transform .5s;
+  }
+  .primary_menu li a:hover::after{
+      transform: scaleX(1);
+      transform-origin: left;
+  }
+  .primary_menu li.current a {
+    color:#ff0a54 !important;
+  }
+  .sidebar-social{
+      margin-top:40px;
+  }
+  .sidebar-social ul{
+      margin-bottom: 0;
+  }
+  .sidebar-social ul li a{
+      margin: 5px 3px;
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      line-height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      background: #fff;
+      font-size: 15px;
+      box-shadow: 0px 0px 10px -2px rgba(61, 61, 61, 0.4);
+      transition: .4s;
+      
+  }
+  .sidebar-social ul li a:hover{
+      background: #ff0a54;
+      color: #edf2f4;
+      transform:scale(.8);
+  }
+  .copyright p a{
+      color: blue;
+  }
+ /*....................MAIN SIDEBAR MENU CSS START HERE........................*/
+
+
